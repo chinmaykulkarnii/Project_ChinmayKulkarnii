@@ -1,0 +1,103 @@
+/* Agenda
+
+On 28/02/2024---
+
+Introduction to CSS
+Basic CSS syntax
+Selectors
+Properties and Values 
+Comments 
+
+-Applying CSS: 
+Inline CSS 
+Internal CSS
+External CSS
+
+-CSS Selectors: 
+Element 
+ID 
+Class 
+Universal 
+Attribute 
+
+-CSS Properties 
+Text Properties 
+Box Model 
+Display 
+Positioning 
+
+
+
+
+
+On 03/02/2024--- 
+
+Flexbox
+Grids
+Colors and Backgrounds 
+Fonts and Typography
+Transitions and Animation
+Responsive Design and Media Queries
+Advance Topics 
+CSS variables 
+CSS Grid Layouts 
+CSS Custom properties 
+CSS Transformations and Transitions 
+CSS Animation
+Assignment */
+
+
+
+/* CSS-- Cascading Style Sheets 
+    -- Language that beutifies the HTML page
+    -- Language that is used to present HTML/XML doc in better way   */
+
+/* CSS is a language that is used to improve the visual apperance of a web page or a awebsite.  */
+
+p{
+    background-color: white;
+    font-family: monospace;
+}
+
+/* h1{
+    background-color: yellow;
+} */
+
+/* #testing1{
+    color: aqua;
+}
+#testing2{
+    color: aquamarine;
+}
+
+.para1{
+    background-color: yellow;
+}
+.para2{
+    background-color: bisque;
+} */
+
+
+/* This * (star) is called as Universal selector  */
+
+*{
+    background-color: chocolate;
+}
+
+
+body{
+    background-color: palegoldenrod;
+}
+
+input[type="text"]{
+    border: 1px solid;
+}
+
+.division1{
+    margin: 20px;
+    padding-left: 40px;
+}
+
+.para1{
+    visibility: hidden;
+}
