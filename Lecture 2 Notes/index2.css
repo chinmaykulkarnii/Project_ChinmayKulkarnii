@@ -1,0 +1,49 @@
+.div1{
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    /* flex-wrap: wrap; */
+
+    display: grid;
+    /* grid-template-columns: repeat(3, 300px); */
+}
+
+h1{
+    font-style: italic;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+h3{
+    letter-spacing: 2px;
+}
+
+.button{
+    background-color: blue;
+    color: white;
+    transition: background-color 0.3 ease-in-out;
+}
+
+.button:hover{
+    background-color: black;
+}
+
+
+/* KeyFrames - used to define next step or the next consecutive step */
+
+@keyframes slide{
+    0% {
+        transform: translateX(0); /* starting position */
+    }
+    100% {
+        transform: translateX(200px, 200px); /*ending position */
+    }
+}
+
+/* 
+
+h1, h2, ... are the selectors in CSS. Because they help us modify selected portion of the HTML 
+
+*/

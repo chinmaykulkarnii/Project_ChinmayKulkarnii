@@ -1,0 +1,29 @@
+/* 
+Flexbox
+Grids
+Colors and Backgrounds
+Fonts and Typography
+Transitions and Animation
+Positioning
+
+-Tailwind 
+
+
+Flexbox or flex: 
+
+flexible layout - It helps to develop in forms of rows and columns
+
+*/
+
+.list1{
+    display: flex; /* Establishes a flex container  */
+    justify-content: space-around; /*Align items along with the main axis*/
+    align-items: center; /*Align items along the cross axis*/
+    flex-direction: row; /* arranges items in a row*/
+    flex-wrap: wrap; /* allows items to wrap to the next line. */
+}
+
+.div1{
+    display: flex; /* Establishes a flex container  */
+    justify-content: space-around; /*Align items along with the main axis*/
+}
