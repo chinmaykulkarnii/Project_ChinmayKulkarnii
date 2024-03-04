@@ -40,6 +40,9 @@ Working of Javascript--
 
 
 <!-- 
+
+- Accessing HTML elements // using JS with HTML 
+
 - ES6 + Features:
     Arrow functions 
     Template literals 
@@ -124,5 +127,87 @@ let square = (num) =>{
 let result = square(5);
 console.log(result);
     //output: 25
+
+ -->
+
+
+
+
+
+
+
+
+
+ <!DOCTYPE html>
+ <head>
+    <title>Accessing HTML elements</title>
+ </head>
+ <body>
+    
+    <h1 id="demo">Hello World!</h1>
+    <button onclick="modifyText()">Modify</button>
+    <button id="demoButton">Button2</button>
+
+    <!--
+        <p></p>
+        <h2>
+
+        </h2>    
+    -->
+
+    <script>
+        const demo1 = document.getElementById('demo');
+        demo1.innerHTML = 'Hello World, Updated';
+
+        function modifyText(){
+            console.log('Button was clicked')
+        }
+
+        document.getElementById('demoButton').addEventListener('click', function(){
+            console.log('Button 2 was clicked')
+        })
+
+    </script>
+
+ </body>
+ </html>
+
+
+
+ <!--
+In console/inspect
+
+1)
+const name = 'Chinmay'
+const greet = 'Hello! $(name)'
+console.log(greet)
+
+output-
+Hello! Chinmay
+
+2)
+try {
+    //code that may throw an error
+    const result = someUndefinedVariable + 10;
+    console.log(result); // This line won't be executed
+} catch (error) {
+    //Handling the error
+    console.error('An error occurred:' , error.message);
+}
+
+output -
+VM1080:7 An error occurred: someUndefinedVariable is not defined
+(anonymous) @ VM1080:7
+
+3)
+try {
+    //code that may throw an error
+    const result = x + 10;
+    console.log(result); // This line won't be executed
+} catch (error) {
+    //Handling the error
+    console.error('An error occurred:' , error.message);
+}
+VM1086:7 An error occurred: x is not defined
 
  -->
