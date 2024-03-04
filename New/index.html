@@ -1,0 +1,128 @@
+
+
+<!--
+    On console/inspect
+
+1.
+let globalVar = 'I am Global'
+
+function scopeExample(){
+
+    let localVar = 'I am Local'
+
+    console.log(globalVar);
+    console.log(localVar);
+}
+scopeExample();
+console.log(globalVar);
+console.log(localVar);
+
+Output-
+
+VM446:7 I am Global
+VM446:8 I am Local
+VM446:11 I am Global
+VM446:12 Uncaught ReferenceError: localVar is not defined
+    at <anonymous>:12:13
+(anonymous) @ VM446:12
+-->
+
+
+
+<!-- Higher order functions:---
+
+these are functions which take one or more another functions as argument 
+
+Example-
+function operate(func, num){
+    return func(num);
+}
+function double (x){
+    return x*2 ;
+}
+
+const result = operate(double, 3);
+console.log(result)
+
+Output-
+6 -->
+
+
+
+
+<!-- Map, Reduce, and Filter:------
+
+Map --
+it returns a new array from previous array by modifiying each and every element
+
+Example-- 
+const numbers = [1,2,3,4,5]
+const square = numbers.map(num => num**2);
+console.log(square)
+
+output- 
+[1, 4, 9, 16, 25]
+
+
+Filter --
+creates a new array but (it helps us and) applies some conditions to it 
+
+Example-- 
+const evenNumbers = numbers.filter(num => num%2 == 0)
+console.log(evenNumbers)
+
+Output-
+(2) [2, 4]
+
+
+Reduce --
+if you want to perform any operation and want to find a single value from that array, so for that Reduce is used.
+
+example --
+const sum = numbers.reduce((total, num) => total + num, 0)
+console.log(sum)
+
+output- 
+15 -->
+
+
+
+
+<!-- Callback function:--
+
+callback function is a function which has argument as a function 
+
+Example --
+function fetchdata(callback){
+    setTimeout(()=>{
+        const data = 'Callback data';
+        callback(data)
+
+    },2000)
+}
+function processData(data){
+    console.log('Callback Data: ', data)
+}
+
+fetchdata(processData)
+
+Output- 
+Callback Data:  Callback data
+
+here fetchdata is a higher order function while (callback) is a callback function. This callback function is passed as an argument. -->
+
+
+
+<!-- Local storage of browsers----
+
+localStorage.setItem('username', 'chinmay');
+/enter
+const storeddata = localStorage.getItem('username')
+console.log(storeddata)
+
+output-
+chinmay
+
+To delete the stored data from browsers---
+
+localStorage.removeItem('username') -->
